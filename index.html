@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nitesh Kumar | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#fdf5f5;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Navbar */
+
+nav{
+    background:#8b0000;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    color:white;
+    font-size:1.6rem;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+}
+
+nav ul li a:hover{
+    color:#ffd6d6;
+}
+
+/* Hero Section */
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(135deg,#8b0000,#dc2626);
+    color:white;
+    padding:40px;
+}
+
+.hero-content h1{
+    font-size:3.5rem;
+    margin-bottom:10px;
+}
+
+.hero-content h2{
+    margin-bottom:20px;
+    font-weight:400;
+}
+
+.hero-content p{
+    max-width:700px;
+    margin:auto;
+    font-size:1.05rem;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 28px;
+    background:white;
+    color:#b91c1c;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+/* General */
+
+section{
+    padding:70px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    color:#8b0000;
+    font-size:2rem;
+}
+
+/* About */
+
+.about{
+    text-align:center;
+    max-width:850px;
+    margin:auto;
+}
+
+/* Cards */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    color:#b91c1c;
+    margin-bottom:10px;
+}
+
+/* Contact */
+
+.contact{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact p{
+    margin:12px 0;
+}
+
+/* Footer */
+
+footer{
+    background:#8b0000;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        margin-top:10px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero-content h1{
+        font-size:2.4rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Nitesh Kumar</div>
+
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Hero Section -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Nitesh Kumar</h1>
+
+<h2>Computer Science Engineering Student | Software Developer</h2>
+
+<p>
+Passionate Computer Science Engineering student with a strong interest in
+software development, problem-solving, and modern web technologies.
+I enjoy learning new technologies and building practical applications
+that improve user experience and solve real-world problems.
+</p>
+
+<a href="#skills" class="btn">Explore Skills</a>
+
+</div>
+
+</section>
+
+<!-- About -->
+
+<section id="about">
+
+<h2 class="section-title">About Me</h2>
+
+<div class="about">
+
+<p>
+I am currently pursuing my Computer Science Engineering degree and continuously
+improving my programming and development skills. I enjoy working with
+Java, Python, C, HTML, and CSS while exploring new opportunities
+in software development and web technologies.
+</p>
+
+</div>
+
+</section>
+
+<!-- Education -->
+
+<section id="education">
+
+<h2 class="section-title">Education</h2>
+
+<div class="card">
+
+<h3>Bachelor of Engineering (Computer Science)</h3>
+
+<p>
+Currently pursuing Computer Science Engineering with a focus on
+programming, software development, and web technologies.
+</p>
+
+</div>
+
+</section>
+
+<!-- Skills -->
+
+<section id="skills">
+
+<h2 class="section-title">Technical Skills</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Programming Languages</h3>
+<p>C, Java, Python</p>
+</div>
+
+<div class="card">
+<h3>Web Development</h3>
+<p>HTML5, CSS3</p>
+</div>
+
+<div class="card">
+<h3>Software Development</h3>
+<p>Problem Solving, Debugging, Application Development</p>
+</div>
+
+<div class="card">
+<h3>Tools</h3>
+<p>Git, GitHub, VS Code</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Contact -->
+
+<section id="contact">
+
+<h2 class="section-title">Contact Information</h2>
+
+<div class="contact">
+
+<p><strong>Name:</strong> Nitesh Kumar</p>
+
+<p><strong>Email:</strong> niteshk91854@gmail.com</p>
+
+<p><strong>Phone:</strong> +91 8792497364</p>
+
+<p><strong>GitHub:</strong> Nitesh-Kumar148</p>
+
+<p><strong>LinkedIn:</strong><br>
+https://www.linkedin.com/in/nitesh-kumar-a69321412
+</p>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Nitesh Kumar | Portfolio Website</p>
+</footer>
+
+</body>
+</html>
